@@ -1,0 +1,35 @@
+.partner-area{
+	background: url();
+	.partner-list{
+		ul{
+			overflow: hidden;
+			vertical-align: middle;
+			padding: 0 0 30px;
+			li{
+				display: inline-block;
+				width: 20%;
+				float: left;
+				position: relative;
+				margin: 0 0 -30px;
+				@include res(m992){width: 25%;}
+				@include res(m768){width: 33.3333%;}
+				@include res(m480){width: 50%;}
+				@include res(m320){width: 100%;}
+				a{
+					display: block;
+					img{
+						width: 100%;
+						display: block;
+						opacity: 0.3;
+						transition: $transition;
+					}
+					&:hover{
+						img{
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}

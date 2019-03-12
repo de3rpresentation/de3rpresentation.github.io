@@ -1,0 +1,136 @@
+.slider-area{
+	display: block;
+	position: relative;
+	.item-content{
+		.item-slider{
+			&.items1{
+				background: url(images/sliders/1.jpg);
+			}
+			&.items2{
+				background: url(images/sliders/1.jpg);
+			}
+			&.items3{
+				background: url(images/sliders/1.jpg);
+			}
+			&.items4{
+				background: url(images/sliders/1.jpg);
+			}
+			.contents{
+				height: 130vh;
+				vertical-align: middle;
+				display: table-cell;
+				@include res(m992){height: 100vh;padding-top: 160px;}
+				@include res(m768){padding-top: 125px;}
+				h2{
+					display: block;
+					font-family: $title-font;
+					font-size: 50px;
+					color: #fff;
+					font-weight: 400;
+					@include res(m1200){margin: 0 0 20px;}
+					@include res(m768){font-size: 36px;}
+					@include res(m320){font-size: 30px;}
+				}
+				p{
+					font-size: 18px;
+					display: block;
+					width: 48%;
+					margin: 0 0 35px;
+					@include res(m1200){width: 70%;margin: 0 0 25px;}
+					@include res(m992){width: 80%;margin: 0 0 25px;}
+					@include res(m480){width: 95%;}
+				}
+				.buttons{
+					display: block;
+					a{
+						&:first-child{
+							&:after{
+							    content: '';
+							    position: absolute;
+							    right: 11px;
+							    top: -5px;
+							    bottom: -5px;
+							    width: 2px;
+							    transform: rotate(24deg);
+								background: $primary-color;
+								@include res(m320){display: none;}
+							}
+						}
+						&:last-child{
+							color:#fff;
+							@include res(m320){display: none;}
+
+						}
+					}
+				}
+			}
+				
+		}
+	}
+	.bx-wrapper{
+		margin: 0;
+		.bx-viewport{
+			padding: 0;
+			left: 0;
+			right: 0;
+			box-shadow: none;
+			border:none;
+		}
+	}
+	.item-thumbnail{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99999;
+		@include res(m992){display: none;}
+		a{
+			padding: 40px 20px;
+			background: rgba(0, 0, 0, 0.5);
+			position: relative;
+			&:after{
+				content:'';
+				position: absolute;
+				right: 0;
+				top: 20%;
+				bottom: 20%;
+				width: 2px;
+				background: rgba(255, 255, 255, 0.05);
+			}
+			&.active{
+				background: rgba(34, 34, 34, 0.4);
+			}
+			.items{
+				.dbox{
+					.dleft{
+						figure{
+							display: block;
+							img{
+								border-radius: 5px;
+								display: block;
+							}
+						}
+					}
+					.dright{
+						.content{
+							padding: 18px 0;
+							h3{
+								font-size: 22px;
+								color: #fff;
+								font-family: $title-font;
+								font-weight: 400;
+								margin: 0 0 10px;
+							}
+							p{
+								font-family: $title-font;
+								font-size: 18px;
+								color: $primary-color;
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

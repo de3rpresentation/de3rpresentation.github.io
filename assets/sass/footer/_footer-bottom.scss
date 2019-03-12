@@ -1,0 +1,46 @@
+footer{
+	.footer-bottom{
+		display: block;
+		position: relative;
+		background: rgba(0, 0, 0, 0.3);
+		line-height: 80px;
+		height: 80px;
+		z-index: 999;
+		@include res(m992){height: auto;line-height: 26px;padding: 30px 0;}
+		.copyright{
+			p{
+				color: #878787;
+				margin: 0;
+				@include res(m992){margin: 0 0 15px;}
+				span{
+					color: $primary-color;
+				}
+			}
+		}
+		.foo-links{
+			text-align: right;
+			ul{
+				li{
+					display: inline-block;
+					padding: 0 16px;
+					@include res(m480){padding: 0 6px;}
+					a{
+						display: block;
+						color: #797979;
+						text-transform: uppercase;
+						font-size: 14px;
+						&:hover{
+							color:#fff;
+						}
+					}
+					&:first-child{
+						padding-left: 0;
+					}
+					&:last-child{
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

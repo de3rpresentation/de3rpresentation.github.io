@@ -1,0 +1,109 @@
+/***Button***/
+.btn1{
+	display: inline-block;
+	position: relative;
+	padding: 0 60px;
+	line-height: 50px;
+	height: 50px;
+	background: $primary-color;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+	text-transform: capitalize;
+	-webkit-clip-path: polygon(12% 0%, 100% 0, 88% 100%, 0% 100%);
+	clip-path: polygon(12% 0%, 100% 0, 88% 100%, 0% 100%);
+	@include res(m320){clip-path: none;padding: 0 30px;}
+	&:hover{
+		background:#111;
+		color: #fff;
+	}
+}
+.btn2{
+	display: inline-block;
+	position: relative;
+	padding: 0 60px;
+	line-height: 46px;
+	height: 50px;
+	background:transparent;
+	border:2px solid  $primary-color;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #111;
+	cursor: pointer;
+	text-transform: capitalize;
+	-webkit-clip-path: polygon(11% 0%, 100% 0, 88% 100%, 0% 100%);
+	clip-path: polygon(11% 0%, 100% 0, 88% 100%, 0% 100%);
+	margin-left: -27px;
+	@include res(m320){clip-path: none;margin: 0;padding: 0 30px;}
+	&:after{
+	    content: '';
+	    position: absolute;
+	    right: 11px;
+	    top: -5px;
+	    bottom: -5px;
+	    width: 2px;
+	    transform: rotate(27deg);
+		background: $primary-color;
+		@include res(m320){display: none;}
+	}
+	&:hover{
+		background:$primary-color;
+		color: #fff;
+	}
+}
+.btn3{
+	display: inline-block;
+	color: $primary-color;
+	font-weight: 500;
+	text-transform: capitalize;
+	i{
+		padding-left: 8px;
+	}
+	&:hover{
+		color: #111;
+	}
+}
+.btn4{
+	display: inline-block;
+	position: relative;
+	padding: 0 60px;
+	line-height: 46px;
+	height: 50px;
+	background:transparent;
+	border:2px solid  $primary-color;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #111;
+	cursor: pointer;
+	text-transform: capitalize;
+	-webkit-clip-path: polygon(12% 0%, 100% 0, 88% 100%, 0% 100%);
+	clip-path: polygon(12% 0%, 100% 0, 88% 100%, 0% 100%);
+	@include res(m320){clip-path: none;padding: 0 30px;}
+	&:after{
+	    content: '';
+	    position: absolute;
+	    right: 11px;
+	    top: -5px;
+	    bottom: -5px;
+	    width: 2px;
+	    transform: rotate(27deg);
+		background: $primary-color;
+		@include res(m320){display: none;}
+	}
+	&:before{
+	    content: '';
+	    position: absolute;
+	    left: 11px;
+	    top: -5px;
+	    bottom: -5px;
+	    width: 2px;
+	    transform: rotate(27.8deg);
+		background: $primary-color;
+		@include res(m320){display: none;}
+	}
+	&:hover{
+		background:$primary-color;
+		color: #fff;
+	}
+}

@@ -1,0 +1,304 @@
+/***All plugins Reset***/
+
+/*owl Navigations*/
+.products-area{
+	.owl-controls{
+		margin: 0;
+		@include res(m1200){display: none !important;}
+		@include res(m992){display: block !important;}
+		@include res(m768){display: none !important;}
+		.owl-buttons{
+			position: absolute;
+			left: 15px;
+			right: 13px;
+			top: 45%;
+			div{
+				opacity: 1;
+				display: block;
+				border-radius: 0;
+				background: #eee;
+				color: #111;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				margin: 0;
+				position: absolute;
+				font-size: 18px;
+				transition: $transition;
+				&:hover{
+					background:$primary-color;
+					color: #fff;
+				}
+				&.owl-prev{
+					left: -73px;
+					padding: 0 25px 0 33px;
+					-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+					clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+				}
+				&.owl-next{
+					right: -74px;
+					padding: 0 33px 0 25px;
+					-webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+					clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+				}
+			}
+		}
+	}
+}
+.events-area{
+	.owl-controls{
+		margin: 0;
+		@include res(m480){display: none !important;}
+		.owl-buttons{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 20px;
+			div{
+				opacity: 1;
+				display: block;
+				border-radius: 0;
+				background: #eee;
+				color: #111;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 0;
+				position: absolute;
+				font-size: 18px;
+				transition: $transition;
+				padding: 0 28px 0 20px;
+				&:hover{
+					background:$primary-color;
+					color: #fff;
+				}
+				&.owl-prev{
+					right: -48px;
+					top: 0;
+					-webkit-clip-path: polygon(0 0, 75% 0%, 100% 100%, 0% 100%);
+					clip-path: polygon(0 0, 75% 0%, 100% 100%, 0% 100%);
+				}
+				&.owl-next{
+					right: -48px;
+					top: 35px;
+					-webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+					clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+				}
+			}
+		}
+	}
+}
+.blog-area{
+	.slick-prev{
+		opacity: 1;
+		display: block;
+		border-radius: 0;
+		background: #eee;
+		color: #111;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		margin: 0;
+		position: absolute;
+		font-size: 18px;
+		transition: $transition;
+		left: -58px;
+		top: 45%;
+		padding: 0 25px 0 33px;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+		z-index: 999;
+		@include res(m1200){display: none;}
+		@include res(m992){display: block;}
+		@include res(m768){display: none;}
+		&:hover{
+			background:$primary-color;
+			color: #fff;
+		}
+	}
+	.slick-next{
+		opacity: 1;
+		display: block;
+		border-radius: 0;
+		background: #eee;
+		color: #111;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		margin: 0;
+		position: absolute;
+		font-size: 18px;
+		transition: $transition;
+		right: -45px;
+		top: 45%;
+		padding: 0 33px 0 25px;
+		-webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+		@include res(m1200){display: none;}
+		@include res(m992){display: block;}
+		@include res(m768){display: none;}
+		&:hover{
+			background:$primary-color;
+			color: #fff;
+		}
+	}
+}
+.twitter-posts{
+	.owl-controls{
+		margin: 0;
+		@include res(m320){display: none !important;}
+		.owl-buttons{
+			position: absolute;
+			right: 13px;
+			top: 38%;
+			div{
+				opacity: 1;
+				display: inline-block;
+				border-radius: 0;
+				background: transparent;
+				color: #111;
+				height: 50px;
+				line-height: 48px;
+				border: 1px solid #fff;
+				text-align: center;
+				margin: 0;
+				width: 80px;
+				font-size: 18px;
+				transition: $transition;
+				-webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+				clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+				color: #fff;
+				border-left: none;
+				border-right: none;
+				position: relative;
+				&:hover{
+					background:#fff;
+					color: #111;
+				}
+				&:after{
+					content:'';
+					position: absolute;
+					left: 6px;
+					top: -5px;
+					bottom: -5px;
+					width: 1px;
+					background: #fff;
+					transform: rotate(12.5deg);
+				}
+				&.owl-prev{
+					margin-right: -15px;
+				}
+				&.owl-next{
+					&:before{
+						content:'';
+						position: absolute;
+						right: 7px;
+						top: -5px;
+						bottom: -5px;
+						width: 1px;
+						background: #fff;
+						transform: rotate(13deg);
+					}
+				}
+				
+			}
+		}
+	}
+}
+/*owl Paginations*/
+.owl-controls{
+	margin: 0;
+	.owl-pagination{
+		.owl-page{
+			padding: 0 2px;
+			span{
+				width: 17px;
+				height: 17px;
+				background: #f7f7f7;
+				opacity: 1;
+				position: relative;
+				margin: 0 3px;
+				&:after{
+					content:'';
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					border:3px solid $primary-color;
+					border-radius: 100%;
+					opacity: 0;
+					transition: $transition;
+				}
+			}
+			&.active{
+				span{
+					background: transparent;
+					&:after{
+						opacity:1;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*bx Slider Navigatons*/
+.bx-controls{
+	.bx-controls-direction{
+		@include res(m768){display: none;}
+		a{
+			text-indent: 0;
+			color: transparent;
+			text-align: center;
+			background: #0e0e0e;
+			width: 80px;
+			height: 50px;
+			line-height: 50px;
+			@include res(m992){top: 62%;}
+			&:hover{
+				background: $primary-color;
+			}
+			&.bx-prev{
+				-webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+				clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+				left: 0;
+				&:before{
+					content:'\f30a';
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					color: #fff;
+					font-weight: 900;
+					font-size: 18px;
+					font-family:"Font Awesome 5 Free";
+				}
+			}
+			&.bx-next{
+				-webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+				clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+				right: 0;
+				&:before{
+					content:'\f30b';
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					color: #fff;
+					font-weight: 900;
+					font-size: 18px;
+					font-family:"Font Awesome 5 Free";
+				}
+			}
+		}
+	}
+}
+.mfp-bottom-bar{
+	display: none;
+}
+.mfp-arrow{
+	display: none !important;
+}

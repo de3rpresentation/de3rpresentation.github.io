@@ -1,0 +1,78 @@
+.blog-pages{
+	.floatright{
+		@include res(m992){float: inherit;}
+	}
+	.blog-list{
+		display: block;
+		margin: 0 0 30px;
+		figure{
+			position: relative;
+			display: block;
+			margin: 0;
+			overflow: hidden;
+			vertical-align: middle;
+			img{
+				display: block;
+				width: 100%;
+				transition: all 0.5s;
+			}
+			.date{
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				background: $primary-color;
+				width: 55px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				padding: 5px 0;
+				strong{
+					font-size: 22px;
+					font-weight: 700;
+					color: #fff;
+					display: block;
+					line-height: 26px;
+				}
+				span{
+					font-size: 16px;
+					font-weight: 600;
+					color: #fff;
+					display: block;
+					text-transform: uppercase;
+					line-height: 26px;
+				}
+			}
+		}
+		.content{
+			border:1px solid #eee;
+			border-top:none;
+			display: block;
+			padding: 30px;
+			transition: $transition;
+			background: #fff;
+			h3{
+				font-family: $title-font;
+				font-size: 22px;
+				color: #212121;
+				letter-spacing: 1px;
+				margin: 0 0 20px;
+			}
+			p{
+				color: #797979;
+				font-size: 16px;
+				margin: 0 0 20px;
+			}
+		}
+		&:hover{
+			figure{
+				img{
+					transform: rotate(5deg) scale(1.2);
+				}
+			}
+			.content{
+				border:1px solid $primary-color;
+				border-top:none;
+			}
+		}
+	}
+}

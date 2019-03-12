@@ -1,0 +1,133 @@
+.about-area{
+	background: url(images/banner/bg-1.jpg);
+	.about-contents{
+		p{
+			margin: 0;
+		}
+		blockquote{
+			margin: 0;
+			border-left: 2px solid $primary-color;
+			font-size: 16px;
+			font-style: italic;
+			margin: 35px 0;
+			color: $primary-color;
+			font-weight: 500;
+		}
+		.buttons{
+			display: block;
+			margin: 50px 0 0;
+			.btn1{
+				-webkit-clip-path: polygon(12% 0%, 100% 0, 89% 100%, 0% 100%);
+    			clip-path: polygon(12% 0%, 100% 0, 89% 100%, 0% 100%);
+    			@include res(m320){clip-path: none;}
+			}
+		}
+	}
+	.about-cata{
+		display: block;
+		position: relative;
+		margin-left: 40px;
+		@include res(m992){margin: 50px 0 0;}
+		.cata-list{
+			height: 160px;
+			padding: 45px 65px;
+			background: #fff;
+			margin-top: -2px;
+			display: block;
+			position: relative;
+			width: 100%;
+			transition: $transition;
+			@include res(m320){padding: 40px 30px;}
+			&:hover{
+				background:#fbfbfb;
+			}
+			&.list-t1{
+				-webkit-clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%);
+				clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%);
+				border:2px solid #eeeeee;
+				@include res(m992){clip-path:none;}
+				&:after{
+					content:'';
+					position: absolute;
+					left: 24px;
+					top: -8px;
+					bottom: -8px;
+					width: 2px;
+					background: #eeeeee;
+					transform: rotate(-17deg);
+					@include res(m992){display:none;}
+
+				}
+				&:before{
+					content:'';
+					position: absolute;
+					right: 24px;
+					top: -8px;
+					bottom: -8px;
+					width: 2px;
+					background: #eeeeee;
+					transform: rotate(-17deg);
+					@include res(m992){display:none;}
+
+				}
+			}
+			&.list-t2{
+				-webkit-clip-path: polygon(12% 0, 100% 0, 88% 100%, 0 100%);
+				clip-path: polygon(12% 0, 100% 0, 88% 100%, 0 100%);
+				border:2px solid #eeeeee;
+				@include res(m992){clip-path:none;}
+				&:after{
+					content:'';
+					position: absolute;
+					left: 24px;
+					top: -8px;
+					bottom: -8px;
+					width: 2px;
+					background: #eeeeee;
+					transform: rotate(17deg);
+					@include res(m992){display:none;}
+				}
+				&:before{
+					content:'';
+					position: absolute;
+					right: 24px;
+					top: -8px;
+					bottom: -8px;
+					width: 2px;
+					background: #eeeeee;
+					transform: rotate(17deg);
+					@include res(m992){display:none;}
+
+				}
+			}
+			.dbox{
+				.dleft{
+					width: 65%;
+					padding-left: 0;
+					.content{
+						h4{
+							font-family: $title-font;
+							font-weight: 400;
+							color: #111;
+							font-size: 24px;
+							margin: 0 0 10px;
+						}
+						a{
+
+						}	
+					}
+				}
+				.dright{
+					width: 34%;
+					text-align: right;
+					padding-right: 0;
+					.cate-ico{
+						img{
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+	}
+}

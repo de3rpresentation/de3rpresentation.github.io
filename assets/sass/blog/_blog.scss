@@ -1,0 +1,199 @@
+.blog-area{
+	.blog-slider{
+		.blog-lists{
+			padding: 0 15px !important;
+			margin: 0;
+			position: relative;
+			overflow: hidden;
+			vertical-align: middle;
+			width: 278px;
+			height: 400px;
+			background: #fff;
+			display: block;
+			transition: $transition;
+			@include res(m480){height: auto;display: none;}
+
+			&:focus{
+				outline:none;
+			}
+			figure{
+				display: none;
+				transition: $transition;
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+			.contents{
+				display: block;
+				position: relative;
+				border:1px solid #eee;
+				width: 100%;
+				padding: 40px;
+				transition: $transition;
+				.fav{
+					display: none;
+				}
+				.tags{
+					display: block;
+					margin: 0 0 22px;
+					transition: $transition;
+					span{
+						color: $primary-color;
+					}
+				}
+				h3{
+					font-size: 22px;
+					color: #111;
+					font-family: $title-font;
+					font-weight: 400;
+					margin: 0 0 22px;
+					transition: $transition;
+				}
+				.date{
+					font-size: 16px;
+					color: #878244;
+					border-bottom: 1px solid #eee;
+					padding: 0 0 22px;
+					display: block;
+					transition: $transition;
+					i{
+						font-size: 18px;
+						color: $primary-color;
+						padding-right: 8px;
+					}
+				}
+				p{
+					font-size: 14px;
+					margin: 22px 0;
+					transition: $transition;
+				}
+				a{
+
+				}
+			}
+			&.slick-current{
+				width: 600px !important;
+				height: 400px;
+				@include res(m480){width: 420px !important;height: auto;display: block;}
+				@include res(m320){width: 300px !important;}
+				figure{
+					display: block;
+					transition: $transition;
+					img{
+						display: block;
+						width: 100%;
+					}
+				}
+				.contents{
+					display: block;
+					position: absolute;
+					border:none;
+					width: 100%;
+					padding: 40px;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					transition: $transition;
+					@include res(m480){top: 50px}
+					@include res(m320){top: 30px}
+					
+					.fav{
+						display: inline-block;
+						position: absolute;
+						top:-220px;
+						right: 45px;
+						height: 46px;
+						line-height: 46px;
+						width: 55px;
+						border:1px solid $primary-color;
+						border-left: none;
+						border-right: none;
+						text-align: center;
+						color: #fff;
+						transition: $transition;
+						cursor: pointer;
+						-webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+						clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+						@include res(m480){display: none;}
+
+						&:after{
+							content:'';
+							position: absolute;
+							left: 3px;
+							top: 0;
+							bottom: 0;
+							width: 1px;
+							background: $primary-color;
+							transform: rotate(6.8deg);
+						}
+						&:before{
+							content:'';
+							position: absolute;
+							right: 3px;
+							top: 0;
+							bottom: 0;
+							width: 1px;
+							background: $primary-color;
+							transform: rotate(6.8deg);
+						}
+						i{
+
+						}
+						&:hover{
+							background: $primary-color;
+						}
+					}
+					.tags{
+						display: block;
+						margin: 0 0 22px;
+						transition: $transition;
+						position: absolute;
+						top: -220px;
+						@include res(m480){display: none;}
+
+						span{
+							color: $primary-color;
+						}
+					}
+					h3{
+						font-size: 22px;
+						color: #fff;
+						font-family: $title-font;
+						font-weight: 400;
+						margin: 0 0 22px;
+						transition: $transition;
+						@include res(m320){font-size: 20px;}
+
+					}
+					.date{
+						font-size: 16px;
+						color: #fff;
+						border-bottom: none;
+						padding: 0 0 22px;
+						display: block;
+						transition: $transition;
+						position: absolute;
+						top: 0;
+						i{
+							font-size: 18px;
+							color: $primary-color;
+							padding-right: 8px;
+						}
+					}
+					p{
+						font-size: 14px;
+						margin: 22px 0;
+						transition: $transition;
+						display: none;
+					}
+					a{
+						&:hover{
+							color:#fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}

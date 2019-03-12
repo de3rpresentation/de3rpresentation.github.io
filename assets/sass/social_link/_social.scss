@@ -1,0 +1,59 @@
+.foo-social{
+	li{
+		display: inline-block;
+		a{
+			display: block;
+			width: 40px;
+			height: 35px;
+			line-height: 35px;
+			color: #fff;
+			font-size: 14px;
+			text-align: center;
+			-webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+			clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+			background: rgba(255, 255, 255, 0.1);
+			i{
+				
+			}
+			&:hover{
+				background: $primary-color;
+			}
+		}
+	}
+}
+.twitter-posts{
+	display: block;
+	position: relative;
+	background: $primary-color;
+	&:after{
+		content:'\f099';
+		position: absolute;
+		left: 1%;
+		font-family: "Font Awesome 5 Brands";
+		color: #000;
+		opacity: 0.08;
+		font-size: 180px;
+		top: 140px;
+	}
+	.contents{
+		position: relative;
+		display: block;
+		@include res(m320){text-align: center;}		
+		p{
+			color: #fff;
+		}
+		a{
+			display: inline-block;
+			color: #fff;
+			padding-left: 10px;
+			&:hover{
+				color:#5DADE2;
+			}
+		}
+		span{
+			display: block;
+			color: #fff;
+			opacity: 0.5;
+		}
+	}
+}

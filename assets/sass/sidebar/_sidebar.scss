@@ -1,0 +1,257 @@
+.sibebar{
+	@include res(m768) { margin: 0 0 60px;}
+	.wighet{
+		display: block;
+		position: relative;
+		margin: 0 0 60px;
+		&:last-child{
+			margin:0;
+		}
+		h3{
+			font-family: $title-font;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #071127;
+			font-size: 20px;
+			position: relative;
+			padding: 0 0 20px;
+			&:after{
+				content:'';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 6px;
+				width: 60px;
+				background: #e7e7e7;
+				border-radius: 10px;
+			}
+			span{
+				color: $primary-color;
+			}
+		}
+	}
+	.serach{
+		display: block;
+		position: relative;
+		form{
+			width: 100%;
+			display: block;
+			position: relative;
+			input{
+				width: 100%;
+				height: 45px;
+				line-height: 45px;
+				border:none;
+				border-bottom: 1px solid #ececec;
+				transition: $transition;
+				&:focus{
+					border-bottom:1px solid $primary-color;
+				}
+			}
+			button{
+				position: absolute;
+				top: 0;
+				right: 15px;
+				line-height: 45px;
+				height: 45px;
+				color: $primary-color;
+				background: transparent;
+			}	
+		}
+	}
+	.categories{
+		ul{
+			li{
+				display: block;
+				padding: 6px 0;
+				&:first-child{
+					padding-top:0;
+				}
+				&:last-child{
+					padding-bottom:0;
+				} 
+				a{
+					color: #071127;
+					display: block;
+					i{
+						color: $primary-color;
+						padding-right: 8px;
+					}
+					span{
+						float: right;
+						font-weight: 600;
+						color: #071127;
+					}
+					&:hover{
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+	.post{
+		.post-list{
+			margin: 0 0 26px;
+			&:last-child{
+				margin:0;
+			}
+			.thimb{
+				display: inline-block;
+				float: left;
+				margin-right: 20px;
+				width: 90px;
+				a{
+					position: relative;
+					display: block;
+					&:after{
+						content:'';
+						position: absolute;
+						left: 50%;
+						right: 50%;
+						top: 50%;
+						bottom: 50%;
+						background: $primary-color;
+						opacity: 0.9;
+						z-index: 99;
+						border-radius: 0px;
+						transition: $transition;
+					}
+					&:before{
+						content: '\f002';
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						color: #fff;
+						font-size: 14px;
+						z-index: 999;
+						font-family: FontAwesome;
+						text-align: center;
+						line-height: 60px;
+						transition: $transition;
+						opacity: 0;
+					}
+					img{
+						width: 100%;
+					}
+					&:hover{
+						&:after{
+							left:0;
+							right: 0;
+							top: 0;
+							bottom: 0;
+						}
+						&:before{
+							opacity: 1;
+						}
+					}
+				}
+			}
+			.con{
+				display: table;
+				span{
+					font-size: 14px;
+					display: block;
+					margin: 0;
+					color: $primary-color;
+				}
+				a{
+					color: #111;
+					font-family: $body-font;
+					&:hover{
+						color:$primary-color;
+					}
+					h6{
+						font-size: 18px;
+						margin: 5px 0 5px;
+						font-weight: 400;
+						font-family: $title-font;
+					}
+				}
+			}
+		}
+	}
+	.tags{
+		ul{
+			li{
+				padding: 5px 3px;
+				a{
+					display: block;
+					border: 1px solid #f5f5f5;
+					color: #707070;
+					font-size: 14px;
+					padding: 0 10px;
+					border-radius: 5px;
+					text-transform: capitalize;
+					&:hover{
+						background:$primary-color;
+						color: #fff;
+						border: 1px solid $primary-color;
+					}
+				}
+			}
+		}
+	}
+	.price-range{
+		display: block;
+		padding: 0;
+		margin-top: 0 15px;
+		.range{
+			strong{
+				display: block;
+				color: #575560;
+				margin: 0 0 20px;
+			}
+			.range-box{
+				margin: 0 0 20px;
+			}
+			span{
+				padding-right: 5px;
+				color: #797979;
+				display: inline-block;
+				text-transform: capitalize;
+				margin: 0 0 25px;
+			}
+			.price-box{
+				padding: 4px 0;
+				display: inline-block;
+				border: none;
+				width: 100px;
+				color: #111;
+
+
+			}
+		}
+		.ui-widget-content .ui-state-default{
+			background: #111;
+			border-radius: 100%;
+			cursor: pointer;
+			&:focus{
+				outline:none;
+			}
+			&:last-child{
+				background:#111;
+				border:2px solid #111;
+			}
+		}
+		.ui-widget-header{
+			background: $primary-color;
+			height: 5px;
+			cursor: pointer;
+		}
+		.ui-widget-content{
+			background: #f4f4f4;
+			height: 5px;
+			cursor: pointer;
+		}
+		.ui-widget-content{
+			border: none;
+		}
+		.ui-slider-handle{
+			width: 15px;
+			height: 15px;
+			top: -5px;
+		}
+	}
+}

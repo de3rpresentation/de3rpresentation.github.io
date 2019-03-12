@@ -1,0 +1,145 @@
+footer{
+	.footer-top{
+		position: relative;
+		z-index: 999;
+		display: block;
+		border-bottom:1px solid rgba(255, 255, 255, 0.1);
+		.foo-about{
+			figure{
+				position: relative;
+				display: block;
+				margin: 0 0 30px;
+				padding: 0;
+				img{
+
+				}
+			}
+			.contents{
+				position: relative;
+				display: block;
+				padding-bottom: 30px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				margin: 0 0 30px;
+				margin-right: 50px;
+				p{
+					display: block;
+					margin: 0 0 30px;
+ 				}
+				a{
+					&:hover{
+						color:#fff;
+					}
+				}
+			}
+		}
+		h2{
+			font-size: 22px;
+			font-family: $title-font;
+			font-weight: 400;
+			color: #fff;
+			position: relative;
+			display: block;
+			padding-left: 70px;
+			margin: 50px 0 70px;
+			&:after{
+				content:'';
+				position: absolute;
+				left: 0;
+				top: -2px;
+				bottom: 0;
+				width: 50px;
+				height: 28px;
+				background:$primary-color;
+				-webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+				clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+			}
+		}
+		.foo-news{
+			.newslists{
+				display: block;
+				padding: 25px 0;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				&:first-child{
+					padding-top:0;
+				}
+				&:last-child{
+					padding-bottom: 0;
+					border:none;
+				}
+				.dbox{
+					.dleft{
+						figure{
+							display: block;
+							width: 80px;
+							position: relative;
+							margin: 0;
+							padding: 0;
+							img{
+								width: 100%;
+								display: block;
+							}
+						}
+					}
+					.dright{
+						.content{
+							h4{
+								font-weight: 400;
+								font-family: $title-font;
+								font-size: 18px;
+								display: block;
+								margin: 0 0 5px;
+ 								a{
+									color: #fff;
+									display: inline-block;
+									&:hover{
+										color:$primary-color;
+									}
+								}
+							}
+							p{
+								display: block;
+								margin: 0 0 5px;
+							}
+							span{
+								color: $primary-color;
+								i{
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.products-foo{
+			ul{
+				display: block;
+				margin: 0 0 25px;
+				li{
+					display: inline-block;
+					padding: 0 4px;
+					&:first-child{
+						padding-left:0;
+					}
+					&:last-child{
+						padding-right: 0;
+					}
+					a{
+						display: block;
+						width: 80px;
+					}
+					img{
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+			p{
+
+			}
+			a{
+
+			}
+		}
+	}
+}

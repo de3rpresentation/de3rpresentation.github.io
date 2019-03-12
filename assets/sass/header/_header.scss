@@ -1,0 +1,84 @@
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999999;
+	background: rgba(0, 0, 0, 0.3);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+	@include res(m768){background: rgba(0, 0, 0, 0.8);}
+	.logo-area{
+		position: relative;
+		line-height: 175px;
+		height: 175px;
+		@include res(m768){height: 120px;line-height: 120px;padding: 15px 0;}
+		a{
+			display: inline-block;
+			position: relative;
+			@include res(m768){display: inline;}
+			img{
+				@include res(m768){display: block;height: 100%;}
+			}	
+		}
+	}
+	.mobilemenu{
+		.mean-container{
+			.mean-nav{
+				background:#1D1D22;
+				margin-top: 34px;
+				ul{
+					li{
+						a{
+							font-size: 13px;
+							padding: 0 5%;
+							line-height: 44px;
+							&.mean-expand{
+								padding: 0;
+								line-height: 44px;
+								height: 44px !important;
+								padding: 0 12px !important;
+								&:hover{
+									background: #1D1D22;
+								}
+								&.mean-expand{
+									&.mean-clicked{
+										background: #1D1D22;
+									}
+								}
+							}
+							&:hover{
+								color: $primary-color;
+								background: transparent;
+							}
+						}
+					}
+				}
+			}
+			.mean-bar{
+				background: inherit;
+				padding: 0;
+				min-height: 0;
+				position: absolute;
+				width: auto !important;
+				left: 0;
+				right: 0;
+				top: 21px;
+				z-index: 9999;
+				@include res(m768){top: 42px;}
+			}
+			a{
+				&.meanmenu-reveal{
+					top: 0;
+					right: 25px !important;
+					background: rgba(0, 0, 0, 0.4);
+					height: 10px;
+					padding: 8px 11px 17px;
+				}
+			}
+		}
+	}
+	&.header-inner{
+		position: relative;
+		background: rgba(0, 0, 0, 0.6);
+	}
+}

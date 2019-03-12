@@ -1,0 +1,325 @@
+.blog-details{
+	.blog-details{
+		.blogs{
+			display: block;
+			margin: 0 0 70px;
+			@include res(m768){margin: 0 0 40px;}
+			figure{
+				position: relative;
+				display: block;
+				overflow: hidden;
+				vertical-align: middle;
+				img{
+					display: block;
+					width: 100%;
+					transition: $transition;
+				}
+				.date{
+					position: absolute;
+					top: 0;
+					right: 20px;
+					display: inline-block;
+					background: $primary-color;
+					width: 60px;
+					text-align: center;
+					padding-top: 10px;
+					z-index: 999;
+					&:after{
+						content:'';
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: -15px;
+						height: 15px;
+						border-top: 15px solid $primary-color;
+						border-left: 30px solid transparent;
+						border-right: 30px solid transparent;
+					}
+					span{
+						display: block;
+						font-size: 14px;
+						font-weight: 400;
+						text-transform: uppercase;
+						color: #fff;
+					}
+					strong{
+						display: block;
+						font-weight: 700;
+						font-size: 30px;
+						line-height: 20px;
+						color: #fff;
+					}
+				}
+			}
+			.content-post{
+				.content{
+					display: block;
+					padding: 40px;
+					border:1px solid #ececec; 
+							@include res(m320) { padding: 20px;}
+
+					ul{
+						display: block;
+						margin: 0 0 10px;
+						li{
+							display: inline-block;
+							padding: 0 15px;
+							@include res(m320) { padding: 0 5px}
+							&:first-child{
+								padding-left:0;
+							}
+							&:last-child{
+								padding-right:0;
+							}
+							i{
+								color: $primary-color;
+								padding-right: 5px;
+							}
+							span{
+								color: #707070;
+								text-transform: capitalize;
+							}
+						}
+					}
+					h4{
+						color: #111;
+						font-size: 22px;
+						font-family: $title-font;
+						font-weight: 500;
+					}
+				}
+				.testi{
+					position: relative;
+					.dbox{
+						.dleft{
+							@include res(m320) { display: none;}
+
+						}
+					}
+					&:after{
+						content:'';
+						position: absolute;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						background: $primary-color;
+						width: 6px;
+					}
+					.con{
+						height: 158px;
+						vertical-align: middle;
+						display: table-cell;
+						padding: 0 20px;
+						p{
+							margin: 0 0 10px;
+							font-style: italic;
+							color: #111;
+							position: relative;
+							&:after{
+								content:'\f10d';
+								position: absolute;
+								left: -25px;
+								top: -5px;
+								font-style: 18px;
+								color: $primary-color;
+								font-family: FontAwesome;
+							}
+						}
+						strong{
+
+						}
+						span{
+
+						}
+					}
+				}
+			}	
+		}
+		.admin{
+			display: block;
+			margin: 0 0 70px;
+			@include res(m768){margin: 0 0 40px;}
+			.dbox{
+				.floatleft{
+					width: 70%;
+					display:block;
+					background: #111;
+							@include res(m320) { width: 100%;}
+
+					.content{
+						height: 210px;
+						display:table-cell;
+						vertical-align: middle;
+						padding-left: 50px;
+						position: relative;
+							@include res(m320) {padding: 30px }
+
+						&:after{
+							content:'';
+							position: absolute;
+							left: 0;
+							top: 42px;
+							bottom: 42px;
+							width: 6px;
+							background: $primary-color;
+						}
+						h4{
+							font-family: $title-font;
+							font-weight: 300;
+							font-size: 20px;
+							color: #fff;
+							margin: 0 0 10px;
+						}
+						p{
+							color: rgba(255, 255, 255, 0.5);
+							margin: 0 0 10px;
+						}
+						ul{
+							display: inline-block;
+							position: relative;
+							line-height: 34px;
+							padding: 0 20px;
+							background: $primary-color;
+							&:after{
+								content:'';
+								position: absolute;
+								right: -12px;
+								width: 12px;
+								top: 0;
+								bottom: 0;
+								border-left: 12px solid $primary-color;
+								border-top: 17px solid transparent;
+								border-bottom: 17px solid transparent;
+							}
+							li{
+								display: inline-block;
+								a{
+									display: block;
+									padding: 0 5px;
+									color: #fff;
+									i{
+
+									}
+								}
+							}
+						}
+					}
+				}
+				.floatright{
+					width: 30%;
+					background: #111;
+					display: block;
+					text-align: right;
+					height: 210px;
+							@include res(m320) { display: none;}
+
+					figure{
+						img{	
+
+						}
+					}
+				}
+			}
+		}
+		.comments-area{
+			margin: 0 0 60px;
+			@include res(m768){margin: 0 0 40px;}
+			h3{
+				font-family: $title-font;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #071127;
+				font-size: 20px;
+				position: relative;
+				padding: 0 0 20px;
+				&:after{
+					content:'';
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 6px;
+					width: 60px;
+					background: #e7e7e7;
+					border-radius: 10px;
+				}
+				span{
+					color: $primary-color;
+				}
+			}
+			.comment-list{
+				padding: 30px;
+				border: 1px solid #ececec;
+				margin-bottom: -1px;
+				.dbox{
+					.dleft{
+						padding-right: 15px;
+						figure{
+							img{
+
+							}
+						}
+					}
+					.dright{
+						h5{
+							font-family: $title-font;
+							font-weight: 400;
+							font-size: 20px;
+							color: #111;
+							margin: 0 0 15px;
+							span{
+								color: $primary-color;
+								font-family: $body-font;
+								font-size: 14px;
+								padding-left: 10px;
+							}
+						}
+						p{
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+		.comment-box{
+			h3{
+				font-family: $title-font;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #071127;
+				font-size: 20px;
+				position: relative;
+				padding: 0 0 20px;
+				&:after{
+					content:'';
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 6px;
+					width: 60px;
+					background: #e7e7e7;
+					border-radius: 10px;
+				}
+				span{
+					color: $primary-color;
+				}
+			}
+			form{
+				fieldset{
+					input{
+						width: 100%;
+						padding: 0 15px;
+						line-height: 50px;
+						height: 50px;
+						border: 1px solid #ececec;
+					}
+					textarea{
+						width: 100%;
+						padding: 15px;
+						height: 124px;
+						border: 1px solid #ececec;
+					}
+				}
+			}
+		}
+	}
+}

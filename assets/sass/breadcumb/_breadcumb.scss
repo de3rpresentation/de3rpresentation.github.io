@@ -1,0 +1,76 @@
+.breadcumb-area{
+	position: relative;
+	background: url(images/breadcumb/bg-1.jpg);
+	padding: 250px 0 150px;
+	@include res(m768){padding: 200px 0 150px;}
+	&:after{
+		background:rgba(0, 0, 0, 0.7);
+		z-index: 9;
+	}
+	.breadcumb{
+		position: relative;
+		&:after{
+			content:'';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: rgba(255, 255, 255, 0.05);
+			z-index: 99;
+		}
+		.content{
+			line-height: 70px;
+			height: 70px;
+			position: relative;
+			z-index: 999;
+			h2{
+				font-family: $title-font;
+				font-size: 32px;
+				font-weight: 700;
+				color: #fff;
+				text-transform: uppercase;
+				margin: 0;
+				display: inline-block;
+				line-height: 70px;
+				@include res(m480){font-size: 28px;}
+			}
+			ul{
+				position: absolute;
+				right: 0;
+				top: 0;
+				line-height: 70px;
+				bottom: 0;
+				display: inline-block;
+				@include res(m480){position: relative;}
+				li{
+					display: inline-block;
+					position: relative;
+					padding: 0 8px;
+					&:after{
+						content:'>';
+						position: absolute;
+						right: -7px;
+						top: 0;
+						bottom: 0;
+						line-height: 70px;
+						color: #838383;
+					}
+					a{
+						color: #838383;
+						text-transform: capitalize;
+					}
+					&:last-child{
+						padding-right: 0;
+						a{
+							color: $primary-color;
+						}
+						&:after{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

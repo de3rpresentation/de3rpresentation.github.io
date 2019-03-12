@@ -1,0 +1,203 @@
+.price-area{
+	.price-lists{
+		display: block;
+		border: 1px solid #eee;
+		background: #fff;
+		text-align: center;
+		padding: 50px 0;
+		position: relative;
+		-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+		clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+		border-top:none;
+		border-bottom: none;
+		transition: $transition;
+		@include res(m768){clip-path: none;border:1px solid #eee;overflow: hidden;vertical-align: middle;padding-bottom: 0px;}
+		
+		&:after{
+			content: '';
+		    position: absolute;
+		    left: -5px;
+		    right: -5px;
+		    top: 35px;
+		    height: 1px;
+		    background: #eee;
+		    transform: rotate(-10.4deg);
+		    @include res(m992){transform: rotate(-16.4deg);}
+			@include res(m768){display: none;}
+
+		}
+		&:before{
+			content: '';
+		    position: absolute;
+		    left: -5px;
+		    right: -5px;
+		    bottom: 35px;
+		    height: 1px;
+		    background: #eee;
+		    transform: rotate(-10.4deg);
+		    @include res(m992){transform: rotate(-16.4deg);}
+			@include res(m768){display: none;}
+
+
+		}
+		
+		.phead{
+			position: relative;
+			display: block;
+			border-bottom:1px solid #eee;
+			height: 200px;
+			.rate{
+				position: absolute;
+				left: -81%;
+				background: $primary-color;
+				right: 0;
+				top: 24px;
+				height: 36px;
+				line-height: 36px;
+				text-align: center;
+				transform: rotate(-45deg);
+				li{
+					display: inline-block;
+					color: #fff;
+					font-size: 14px;
+					padding: 0;
+					i{
+
+					}
+				}
+			}
+			h3{
+				display: block;
+				font-family: $title-font;
+				font-weight: 400;
+				color: #111;
+				margin: 0;
+				padding-top: 70px;
+			}
+			.prices{
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 130px;
+				height: 130px;
+				border-radius: 100%;
+				border:2px solid $primary-color;
+				margin: 0 auto;
+				bottom: -64px;
+				background: #fff;
+				z-index: 999;
+				transition: $transition;
+				strong{
+					display: inline-block;
+					position: relative;
+					font-family: $title-font;
+					font-size: 36px;
+					font-weight: 400;
+					color: #111;
+					padding-left: 10px;
+					margin-top: 35px;
+					transition: $transition;
+					i{
+						font-size: 16px;
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+				}	
+				span{
+					display: block;
+					font-size: 12px;
+					color: $primary-color;
+					line-height: 20px;
+					transition: $transition;
+				}
+			}
+		}
+		.pbody{
+			display: block;
+			position: relative;
+			padding: 95px 0 50px;
+			ul{
+				display: block;
+				margin: 0 0 20px; 
+				li{
+					display: block;
+					padding: 10px 0;
+					span{
+
+					}
+				}
+			}
+			a{
+				
+			}
+		}
+		&.middel{
+			-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+			clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+			@include res(m768){clip-path: none;}
+			@include res(m768){clip-path: none;border:1px solid #eee;}
+
+			&:after{
+				content: '';
+			    position: absolute;
+			    left: -5px;
+			    right: -5px;
+			    top: 35px;
+			    height: 1px;
+			    background: #eee;
+			    transform: rotate(10.4deg);
+		    	@include res(m992){transform: rotate(16.4deg);}
+				@include res(m768){display: none;}
+			}
+			&:before{
+				content: '';
+			    position: absolute;
+			    left: -5px;
+			    right: -5px;
+			    bottom: 35px;
+			    height: 1px;
+			    background: #eee;
+			    transform: rotate(10.4deg);
+		    	@include res(m992){transform: rotate(16.4deg);}
+				@include res(m768){display: none;}
+			}
+			.phead{
+				.rate{
+					position: absolute;
+					left: -76%;
+					background: $primary-color;
+					right: 0;
+					top: 0;
+					height: 36px;
+					line-height: 36px;
+					text-align: center;
+					transform: rotate(-45deg);
+					li{
+						display: inline-block;
+						color: #fff;
+						font-size: 14px;
+						padding: 0;
+						i{
+
+						}
+					}
+				}
+			}
+		}
+		&:hover{
+			background: #fbfbfb;
+			.phead{
+				.prices{
+					background: $primary-color;
+					strong{
+						color: #fff;
+					}
+					span{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
