@@ -307,7 +307,7 @@ h4 {
 .section-heading h2 {
   display: inline-block;
   position: relative;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 36px;
   text-transform:capitalize;
@@ -364,7 +364,7 @@ h4 {
 }
 
 .section-heading2 h2 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 36px;
   text-transform: capitalize;
@@ -2343,7 +2343,7 @@ header .main-header .cart-head .nav-shop-cart .product_list_widget .mini_cart_it
   margin: 0;
   text-align: left;
   transition: all 0.3s;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
 }
 header .main-header .cart-head .nav-shop-cart .product_list_widget .mini_cart_item a img {
   border: 1px solid #e4e4e4;
@@ -2380,7 +2380,7 @@ header .main-header .cart-head .nav-shop-cart .product_list_widget .mini_cart_it
   text-align: left;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
 }
 header .main-header .cart-head .nav-shop-cart .total {
   border-top: 1px solid #eee;
@@ -2391,7 +2391,7 @@ header .main-header .cart-head .nav-shop-cart .total {
 header .main-header .cart-head .nav-shop-cart .total .amount {
   padding-left: 5px;
   position: relative;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
 }
 header .main-header .cart-head .nav-shop-cart .buttons {
   margin: 0;
@@ -2477,7 +2477,7 @@ margin-top:50px;
 }
 .slider-area .item-content .item-slider .contents h2 {
   display: block;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 50px;
   color: #fff;
   font-weight: 400;
@@ -2599,12 +2599,12 @@ margin-top:50px;
 .slider-area .item-thumbnail a .items .dbox .dright .content h3 {
   font-size: 22px;
   color: #fff;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 0 10px;
 }
 .slider-area .item-thumbnail a .items .dbox .dright .content p {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #cd8c31;
   margin: 0;
@@ -2755,7 +2755,7 @@ margin-top:50px;
   padding-left: 0;
 }
 .about-area .about-cata .cata-list .dbox .dleft .content h4 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #111;
   font-size: 24px;
@@ -2807,7 +2807,7 @@ margin-top:50px;
   z-index: 999;
 }
 .breadcumb-area .breadcumb .content h2 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: #fff;
@@ -2907,7 +2907,7 @@ margin-top:50px;
 .banner-area .banner-con h2 {
   font-size: 36px;
   font-weight: 400;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   margin: 0 0 20px;
   color: #fff;
 }
@@ -2921,7 +2921,7 @@ margin-top:50px;
   margin: 0 0 26px;
 }
 .banner-area .banner-con .price del {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
   color: #525252;
 }
@@ -2931,7 +2931,7 @@ margin-top:50px;
   }
 }
 .banner-area .banner-con .price strong {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
   color: #cd8c31;
   font-weight: 400;
@@ -3047,7 +3047,7 @@ margin-top:50px;
 }
 .banner-area2 .lg-text h1 {
   margin: 0;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 200px;
   color: #fff;
   opacity: 0.05;
@@ -3129,7 +3129,7 @@ margin-top:50px;
   font-size: 36px;
   font-weight: 400;
   color: #fff;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   position: relative;
 }
 @media only screen and (max-width: 1600px) {
@@ -3354,7 +3354,7 @@ margin-top:50px;
 }
 .training-area .training-con h2 {
   font-size: 36px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #fff;
   position: relative;
@@ -3385,7 +3385,7 @@ margin-top:50px;
   }
 }
 .training-area .training-con h1 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #cd8c31;
   font-size: 40px;
   font-weight: 400;
@@ -3455,7 +3455,7 @@ margin-top:50px;
 .subscribe-area .subscribe .conts h2 {
   color: #fff;
   font-size: 24px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0;
   display: block;
@@ -3552,7 +3552,7 @@ margin-top:50px;
 }
 .google-map-index .map-conts h1 {
   color: #fff;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 15px;
 }
@@ -3664,7 +3664,7 @@ margin-top:50px;
 }
 .price-area .price-lists .phead h3 {
   display: block;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #111;
   margin: 0;
@@ -3687,7 +3687,7 @@ margin-top:50px;
 .price-area .price-lists .phead .prices strong {
   display: inline-block;
   position: relative;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 400;
   color: #111;
@@ -3923,7 +3923,7 @@ margin-top:50px;
   margin: 0;
 }
 .sibebar .wighet h3 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #071127;
@@ -4076,7 +4076,7 @@ margin-top:50px;
   font-size: 18px;
   margin: 5px 0 5px;
   font-weight: 400;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
 }
 .sibebar .tags ul li {
   padding: 5px 3px;
@@ -4282,7 +4282,7 @@ margin-top:50px;
 .products-area .catagories-lists .contents h3 {
   margin: 0;
   font-size: 20px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #111;
   transition: all 0.3s;
@@ -4326,12 +4326,12 @@ margin-top:50px;
 .products-area .pro-sliders .products .contents h3 {
   font-size: 22px;
   font-weight: 400;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #111;
   margin: 0 0 10px;
 }
 .products-area .pro-sliders .products .contents span {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #cd8c31;
   display: block;
   font-size: 18px;
@@ -4433,7 +4433,7 @@ margin-top:50px;
 .shop-page .products .contents h3 {
   font-size: 22px;
   font-weight: 400;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #111;
   margin: 0 0 10px;
 }
@@ -4441,7 +4441,7 @@ margin-top:50px;
   display: none;
 }
 .shop-page .products .contents span {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #cd8c31;
   display: block;
   font-size: 18px;
@@ -4516,7 +4516,7 @@ margin-top:50px;
 }
 .product-details .single-product-content h2 {
   font-size: 36px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #111;
   position: relative;
@@ -4874,7 +4874,7 @@ padding:0 20px 0 0px;}
 .blog-area .blog-slider .blog-lists .contents h3 {
   font-size: 22px;
   color: #111;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 0 22px;
   transition: all 0.3s;
@@ -5010,7 +5010,7 @@ padding:0 20px 0 0px;}
 .blog-area .blog-slider .blog-lists.slick-current .contents h3 {
   font-size: 22px;
   color: #fff;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 0 22px;
   transition: all 0.3s;
@@ -5101,7 +5101,7 @@ padding:0 20px 0 0px;}
   background: #fff;
 }
 .blog-pages .blog-list .content h3 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   color: #212121;
   letter-spacing: 1px;
@@ -5217,7 +5217,7 @@ padding:0 20px 0 0px;}
 .blog-details .blog-details .blogs .content-post .content h4 {
   color: #111;
   font-size: 22px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 .blog-details .blog-details .blogs .content-post .testi {
@@ -5299,7 +5299,7 @@ padding:0 20px 0 0px;}
   background: #cd8c31;
 }
 .blog-details .blog-details .admin .dbox .floatleft .content h4 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: #fff;
@@ -5365,7 +5365,7 @@ padding:0 20px 0 0px;}
   }
 }
 .blog-details .blog-details .comments-area h3 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #071127;
@@ -5395,7 +5395,7 @@ padding:0 20px 0 0px;}
   padding-right: 15px;
 }
 .blog-details .blog-details .comments-area .comment-list .dbox .dright h5 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #111;
@@ -5411,7 +5411,7 @@ padding:0 20px 0 0px;}
   margin: 0;
 }
 .blog-details .blog-details .comment-box h3 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #071127;
@@ -6064,7 +6064,7 @@ footer .footer-top .foo-about .contents a:hover {
 }
 footer .footer-top h2 {
   font-size: 22px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #fff;
   position: relative;
@@ -6109,7 +6109,7 @@ footer .footer-top .foo-news .newslists .dbox .dleft figure img {
 }
 footer .footer-top .foo-news .newslists .dbox .dright .content h4 {
   font-weight: 400;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   display: block;
   margin: 0 0 5px;
@@ -6181,7 +6181,7 @@ footer .footer-top .products-foo ul li img {
 }
 .gallery-area .gimg figure .content h3 {
   font-size: 22px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #fff;
   margin: 0 0 10px;
@@ -6292,7 +6292,7 @@ footer .footer-top .products-foo ul li img {
   background: #fff;
 }
 .events-area .panel-group .panel .panel-heading a h3 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #cd8c31;
   margin: 0 0 15px;
@@ -6320,7 +6320,7 @@ footer .footer-top .products-foo ul li img {
   position: absolute;
   right: 0;
   top: -10px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #cd8c31;
   font-size: 80px;
   display: inline-block;
@@ -6363,7 +6363,7 @@ footer .footer-top .products-foo ul li img {
   position: absolute;
   right: 0;
   top: -10px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #eee;
   font-size: 80px;
   display: inline-block;
@@ -6390,7 +6390,7 @@ footer .footer-top .products-foo ul li img {
   transition: all 0.3s;
 }
 .events-area .panel-group .panel .panel-heading a.collapsed h3 {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #cd8c31;
   margin: 0 0 10px;
@@ -6399,7 +6399,7 @@ footer .footer-top .products-foo ul li img {
   position: absolute;
   right: 0;
   top: -10px;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   color: #eee;
   font-size: 80px;
   display: inline-block;
@@ -6490,7 +6490,7 @@ footer .footer-top .products-foo ul li img {
   font-weight: 600;
 }
 .event-details .buyticket .con strong {
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   display: inline-block;
   color: #cd8c31;
   padding-left: 10px;
@@ -6534,7 +6534,7 @@ footer .footer-top .products-foo ul li img {
 }
 .event-details .descriptions .eventleft li span {
   color: #fff;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   display: block;
 }
@@ -6574,7 +6574,7 @@ footer .footer-top .products-foo ul li img {
   position: relative;
   background: #fff;
   color: #111;
-  font-family: "Audiowide", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 50px;
 }
@@ -6656,7 +6656,7 @@ text-transform:capitalize;
 	text-transform:uppercase;
 	margin-top:20px;
 color:#111111;
-font-family: "Audiowide", cursive;
+font-family: "Poppins", sans-serif;
 	margin-left:40px;
 }
 .news_right_box1 h6{
@@ -6766,7 +6766,7 @@ margin-right:8px;
 .news_left_cont h3{
 	font-size:22px;
 	color:#fff;
-	font-family: "Audiowide", cursive;
+	font-family: "Poppins", sans-serif;
 	font-weight:700;
 	text-transform:uppercase;
 	margin-left:25px;
